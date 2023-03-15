@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main()
+{
+    #define tam_max 10
+    
+    float vet1[tam_max];
+    float maior;
+    
+    for(int i=0; i<tam_max; i++)
+        scanf("%f",&vet1[i]);// le os dados
+        
+    maior = vet1[0];
+    for(int i=0; i<tam_max; i++)
+        if (vet1[i] > maior){
+            maior = vet1[i];
+        }
+            
+    printf("o maior elemento é:%f\n",maior);        
+
+    return 0;
+}
